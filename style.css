@@ -1,0 +1,101 @@
+
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#f1f1f1;
+ font-family:Inter,system-ui;
+}
+.topbar{
+ background:#1f2328;
+ color:#fff;
+ padding:14px 16px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.logo{
+ font-weight:800;
+ letter-spacing:2px;
+ display:flex;
+ align-items:center;
+ gap:8px;
+}
+.dash{
+ width:40px;height:4px;background:#fff;
+}
+.stripes{
+ width:60px;height:6px;
+ background:repeating-linear-gradient(
+ 45deg,#f4a000,#f4a000 8px,#0000 8px,#0000 14px);
+}
+.menu-btn{font-size:26px}
+
+#mobileMenu{
+ display:none;
+ background:#1c1f23;
+}
+#mobileMenu a{
+ display:block;
+ padding:14px 18px;
+ color:#cfcfcf;
+ text-decoration:none;
+ border-bottom:1px solid #2b2f34;
+}
+.socials{
+ display:flex;
+ justify-content:space-around;
+ padding:14px;
+ color:#888;
+}
+
+.wrapper{padding:14px}
+
+.card{
+ background:#fff;
+ border-radius:12px;
+ margin-bottom:18px;
+ overflow:hidden;
+ box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+.card img{
+ width:100%;
+ display:block;
+}
+.content{
+ padding:16px;
+}
+.content h2{
+ margin:0 0 10px;
+ font-weight:700;
+}
+.content p{
+ margin:0 0 14px;
+ color:#555;
+ line-height:1.45;
+}
+.buttons{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+}
+
+.btn{
+ padding:12px;
+ border-radius:8px;
+ color:#fff;
+ text-decoration:none;
+ font-weight:600;
+ text-align:center;
+}
+.full{display:block;width:100%}
+.green{background:#1faa59}
+.blue{background:#0d6efd}
+.red{background:#dc3545}
+.dark{background:#212529}
+
+footer{
+ text-align:center;
+ color:#777;
+ padding:18px;
+ font-size:14px;
+}
