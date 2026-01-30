@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Administration Panel</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="title">ADMINISTRATION</div>
+  <div class="user">Logged in via Discord</div>
+</header>
+
+<aside class="sidebar">
+  <a href="index.html" class="active">Dashboard</a>
+  <a href="reports.html">Reports</a>
+  <a href="bans.html">Bans</a>
+  <a href="appeals.html">Unban Appeals</a>
+  <a href="staff.html">Staff</a>
+</aside>
+
+<main class="content">
+  <h1>Overview</h1>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h2>Active Bans</h2>
+      <p id="banCount">–</p>
+    </div>
+    <div class="stat-box">
+      <h2>Open Reports</h2>
+      <p id="reportCount">–</p>
+    </div>
+    <div class="stat-box">
+      <h2>Pending Appeals</h2>
+      <p id="appealCount">–</p>
+    </div>
+  </div>
+</main>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
