@@ -1,4 +1,8 @@
-function toggleMenu(){
-const m=document.getElementById("mobileMenu");
-m.style.display=m.style.display==="block"?"none":"block";
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function openRoblox() {
+  window.location.href = "roblox://placeId=YOUR_PLACE_ID";
 }
