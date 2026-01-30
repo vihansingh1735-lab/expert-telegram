@@ -1,95 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FPS Rivals</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Emergency Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+<!-- TOP BAR -->
 <header class="topbar">
-  <div class="logo">
-    <span class="dash"></span>
-    FPS RIVALS
-    <span class="stripes"></span>
+  <div class="brand">
+    <span class="bar"></span>
+    EMERGENCY SERVICES
   </div>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
-<nav id="mobileMenu">
-  <a href="#">🎮 Game</a>
-  <a href="#">📘 Wiki</a>
-  <a href="#">🛟 Support</a>
-  <a href="#">🖥 Private Servers</a>
-  <div class="socials">
-    <span>Discord</span>
-    <span>X</span>
-    <span>TikTok</span>
-    <span>YouTube</span>
-  </div>
+<!-- MOBILE MENU -->
+<nav id="menu">
+  <a href="#" onclick="openRoblox()">Play</a>
+  <a href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">Report Player</a>
+  <a href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">Unban Appeal</a>
+  <a href="admin/index.html">Administration</a>
 </nav>
 
-<main class="wrapper">
+<!-- CONTENT -->
+<main class="container">
 
-<section class="card">
-  <img src="assets/hero.jpg">
-  <div class="content">
-    <h2>About FPS Rivals</h2>
-    <p>
-      FPS Rivals is a competitive first-person shooter on Roblox inspired by tactical and fast‑paced combat.
-      Choose your loadout, fight real players, and dominate ranked matches.
-    </p>
-    <div class="buttons">
-      <a class="btn green">▶ Play now on Roblox</a>
-      <a class="btn blue">🗄 Browse private servers</a>
+  <!-- PLAY CARD -->
+  <section class="card">
+    <img src="assets/hero.jpg" alt="">
+    <div class="card-body">
+      <h2>About the Game</h2>
+      <p>
+        A realistic emergency services experience on Roblox.
+        Follow rules, roleplay seriously, and cooperate with others.
+      </p>
+
+      <div class="actions">
+        <button class="btn green" onclick="openRoblox()">▶ Play on Roblox</button>
+        <a class="btn blue" href="https://www.roblox.com/games/YOUR_PLACE_ID" target="_blank">
+          View Game Page
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="card">
-  <img src="assets/support.jpg">
-  <div class="content">
-    <h2>Information & Support</h2>
-    <p>
-      Visit our Wiki for guides and updates or contact our support team if you need help.
-    </p>
-    <div class="buttons">
-      <a class="btn blue">Latest Updates</a>
-      <a class="btn green">Wiki</a>
-      <a class="btn dark">Support</a>
+  <!-- SUPPORT CARD -->
+  <section class="card">
+    <img src="assets/support.jpg" alt="">
+    <div class="card-body">
+      <h2>Support & Information</h2>
+      <p>
+        Need help or want to learn the rules? Use the options below.
+      </p>
+
+      <div class="actions">
+        <a class="btn blue" href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">
+          Report Player
+        </a>
+        <a class="btn dark" href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">
+          Unban Appeal
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="card">
-  <img src="assets/report.jpg">
-  <div class="content">
-    <h2>Report Player</h2>
-    <p>
-      Please report cheaters, exploiters, or rule breakers using this form.
-    </p>
-    <a class="btn red full">🚩 Report Player</a>
-  </div>
-</section>
-
-<section class="card">
-  <img src="assets/unban.jpg">
-  <div class="content">
-    <h2>Request Unban</h2>
-    <p>
-      If you believe your ban was unfair, submit an appeal here.
-    </p>
-    <a class="btn dark full">⚖ Request Unban</a>
-  </div>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  Links to FPS Rivals are sponsored.
+  Links related to this experience may be sponsored.
 </footer>
 
 <script src="js/main.js"></script>
