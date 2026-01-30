@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Player Reports</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="title">PLAYER REPORTS</div>
+</header>
+
+<aside class="sidebar">
+  <a href="index.html">Dashboard</a>
+  <a href="reports.html" class="active">Reports</a>
+  <a href="bans.html">Bans</a>
+  <a href="appeals.html">Unban Appeals</a>
+  <a href="staff.html">Staff</a>
+</aside>
+
+<main class="content">
+  <h1>Reports</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Reporter</th>
+        <th>Reported Player</th>
+        <th>Reason</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="reportTable">
+      <!-- Loaded from backend -->
+    </tbody>
+  </table>
+</main>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
