@@ -11,68 +11,97 @@
 
 <body>
 
-<!-- TOP BAR -->
-<header class="topbar">
-  <div class="brand">
-    <span class="bar"></span>
+<!-- HEADER -->
+<header class="eh-header">
+  <div class="eh-logo">
+    <span class="eh-dash"></span>
     EMERGENCY SERVICES
+    <span class="eh-stripes"></span>
   </div>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <button class="eh-menu" onclick="toggleMenu()">☰</button>
 </header>
 
 <!-- MOBILE MENU -->
-<nav id="menu">
-  <a href="#" onclick="openRoblox()">Play</a>
+<nav id="eh-menu">
+  <a onclick="openRoblox()">Game</a>
+  <a href="#">Wiki</a>
   <a href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">Report Player</a>
-  <a href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">Unban Appeal</a>
+  <a href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">Request Unban</a>
   <a href="admin/index.html">Administration</a>
 </nav>
 
-<!-- CONTENT -->
-<main class="container">
+<!-- PAGE CONTENT -->
+<main class="eh-container">
 
-  <!-- PLAY CARD -->
-  <section class="card">
-    <img src="assets/hero.jpg" alt="">
-    <div class="card-body">
+  <!-- ABOUT -->
+  <section class="eh-card">
+    <img src="assets/hero.jpg" class="eh-image">
+    <div class="eh-body">
       <h2>About the Game</h2>
       <p>
-        A realistic emergency services experience on Roblox.
-        Follow rules, roleplay seriously, and cooperate with others.
+        A realistic emergency services roleplay experience on Roblox,
+        inspired by serious and structured gameplay.
       </p>
 
-      <div class="actions">
-        <button class="btn green" onclick="openRoblox()">▶ Play on Roblox</button>
+      <div class="eh-buttons">
+        <button class="btn green" onclick="openRoblox()">▶ Play now on Roblox</button>
         <a class="btn blue" href="https://www.roblox.com/games/YOUR_PLACE_ID" target="_blank">
-          View Game Page
+          Browse private servers
         </a>
       </div>
     </div>
   </section>
 
-  <!-- SUPPORT CARD -->
-  <section class="card">
-    <img src="assets/support.jpg" alt="">
-    <div class="card-body">
-      <h2>Support & Information</h2>
+  <!-- SUPPORT -->
+  <section class="eh-card">
+    <img src="assets/support.jpg" class="eh-image">
+    <div class="eh-body">
+      <h2>Information & Support</h2>
       <p>
-        Need help or want to learn the rules? Use the options below.
+        Visit our Wiki, view updates, or contact support if you need help.
       </p>
 
-      <div class="actions">
-        <a class="btn blue" href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">
-          Report Player
-        </a>
-        <a class="btn dark" href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">
-          Unban Appeal
-        </a>
+      <div class="eh-buttons">
+        <a class="btn blue" href="#">Latest Updates</a>
+        <a class="btn green" href="#">Wiki</a>
+        <a class="btn dark" href="#">Support</a>
       </div>
+    </div>
+  </section>
+
+  <!-- REPORT -->
+  <section class="eh-card">
+    <img src="assets/report.jpg" class="eh-image">
+    <div class="eh-body">
+      <h2>Report Player</h2>
+      <p>
+        Please use this form to report rule violations immediately.
+      </p>
+
+      <a class="btn red full" href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">
+        🚩 Report Player
+      </a>
+    </div>
+  </section>
+
+  <!-- UNBAN -->
+  <section class="eh-card">
+    <img src="assets/unban.jpg" class="eh-image">
+    <div class="eh-body">
+      <h2>Request Unban</h2>
+      <p>
+        If you believe your ban was unfair, submit an appeal.
+      </p>
+
+      <a class="btn dark full" href="https://forms.gle/YOUR_UNBAN_FORM" target="_blank">
+        ⚖ Request Unban
+      </a>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="eh-footer">
   Links related to this experience may be sponsored.
 </footer>
 
