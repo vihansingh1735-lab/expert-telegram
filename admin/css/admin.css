@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui;
+  background: #f1f1f1;
+}
+
+.topbar {
+  background: #1f2328;
+  color: white;
+  padding: 14px 20px;
+  font-weight: 700;
+}
+
+.sidebar {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #1c1f23;
+}
+
+.sidebar a {
+  display: block;
+  padding: 14px;
+  color: #cfcfcf;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background: #2b2f34;
+  color: white;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
