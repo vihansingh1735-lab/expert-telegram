@@ -5,24 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emergency Services</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="eh-header">
-  <div class="eh-logo">
-    <span class="eh-dash"></span>
+<header class="header">
+  <div class="logo">
+    <span class="dash"></span>
     EMERGENCY SERVICES
-    <span class="eh-stripes"></span>
+    <span class="stripes"></span>
   </div>
-  <button class="eh-menu" onclick="toggleMenu()">☰</button>
+  <button class="menu" onclick="toggleMenu()">☰</button>
 </header>
 
-<!-- MOBILE MENU -->
-<nav id="eh-menu">
+<nav id="menu">
   <a onclick="openRoblox()">Game</a>
   <a href="#">Wiki</a>
   <a href="https://forms.gle/YOUR_REPORT_FORM" target="_blank">Report Player</a>
@@ -30,49 +28,46 @@
   <a href="admin/index.html">Administration</a>
 </nav>
 
-<!-- PAGE CONTENT -->
-<main class="eh-container">
+<main class="container">
 
   <!-- ABOUT -->
-  <section class="eh-card">
-    <img src="assets/hero.jpg" class="eh-image">
-    <div class="eh-body">
+  <section class="card">
+    <div class="banner banner-blue"></div>
+    <div class="content">
       <h2>About the Game</h2>
       <p>
         A realistic emergency services roleplay experience on Roblox,
         inspired by serious and structured gameplay.
       </p>
 
-      <div class="eh-buttons">
+      <div class="buttons">
         <button class="btn green" onclick="openRoblox()">▶ Play now on Roblox</button>
-        <a class="btn blue" href="https://www.roblox.com/games/YOUR_PLACE_ID" target="_blank">
-          Browse private servers
-        </a>
+        <a class="btn blue" href="#">Browse private servers</a>
       </div>
     </div>
   </section>
 
   <!-- SUPPORT -->
-  <section class="eh-card">
-    <img src="assets/support.jpg" class="eh-image">
-    <div class="eh-body">
+  <section class="card">
+    <div class="banner banner-green"></div>
+    <div class="content">
       <h2>Information & Support</h2>
       <p>
         Visit our Wiki, view updates, or contact support if you need help.
       </p>
 
-      <div class="eh-buttons">
-        <a class="btn blue" href="#">Latest Updates</a>
-        <a class="btn green" href="#">Wiki</a>
-        <a class="btn dark" href="#">Support</a>
+      <div class="buttons">
+        <a class="btn blue">Latest Updates</a>
+        <a class="btn green">Wiki</a>
+        <a class="btn dark">Support</a>
       </div>
     </div>
   </section>
 
   <!-- REPORT -->
-  <section class="eh-card">
-    <img src="assets/report.jpg" class="eh-image">
-    <div class="eh-body">
+  <section class="card">
+    <div class="banner banner-red"></div>
+    <div class="content">
       <h2>Report Player</h2>
       <p>
         Please use this form to report rule violations immediately.
@@ -85,9 +80,9 @@
   </section>
 
   <!-- UNBAN -->
-  <section class="eh-card">
-    <img src="assets/unban.jpg" class="eh-image">
-    <div class="eh-body">
+  <section class="card">
+    <div class="banner banner-dark"></div>
+    <div class="content">
       <h2>Request Unban</h2>
       <p>
         If you believe your ban was unfair, submit an appeal.
@@ -101,7 +96,7 @@
 
 </main>
 
-<footer class="eh-footer">
+<footer class="footer">
   Links related to this experience may be sponsored.
 </footer>
 
