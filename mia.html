@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Staff Panel</title></head>
+<body>
+<h1>Staff Panel</h1>
+<input id="userid" placeholder="User ID">
+<input id="reason" placeholder="Reason">
+<button onclick="ban()">Ban</button>
+<script>
+function ban(){
+ fetch("/ban",{method:"POST",headers:{"Content-Type":"application/json"},
+ body:JSON.stringify({
+  userid:userid.value,
+  reason:reason.value,
+  staff:"Admin"
+ })})
+}
+</script>
+</body>
+</html>
