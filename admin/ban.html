@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ban Management</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="title">BAN MANAGEMENT</div>
+</header>
+
+<aside class="sidebar">
+  <a href="index.html">Dashboard</a>
+  <a href="reports.html">Reports</a>
+  <a href="bans.html" class="active">Bans</a>
+  <a href="appeals.html">Unban Appeals</a>
+  <a href="staff.html">Staff</a>
+</aside>
+
+<main class="content">
+  <h1>Create Ban</h1>
+
+  <div class="card">
+    <input id="userid" placeholder="Roblox User ID">
+    <input id="reason" placeholder="Reason">
+    <button onclick="createBan()">Ban Player</button>
+  </div>
+
+  <h2>Active Bans</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Reason</th>
+        <th>Staff</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody id="banTable"></tbody>
+  </table>
+</main>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
